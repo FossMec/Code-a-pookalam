@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle0{
+    background: #36c;
+background:
+linear-gradient(115deg, transparent 75%, rgba(255, 186, 95, 0.8) 75%) 0 0,
+linear-gradient(245deg, transparent 75%,rgba(255, 186, 95, 0.8) 75%) 0 0,
+linear-gradient(115deg, transparent 75%, rgba(255, 186, 95, 0.8) 75%) 7px -15px,
+linear-gradient(245deg, transparent 75%, rgba(255, 186, 95, 0.8) 75%) 7px -15px,
+#36c;
+background-size: 15px 30px;
+
+    display: block;
+    width: 650px;
+    height: 650px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle1{
+    background-color: orange;
+    background-image:
+    radial-gradient(circle at 100% 150%, darkmagenta 24%, pink 24%, pink 28%, darkmagenta 28%, darkmagenta 36%, pink 36%, pink 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, darkmagenta 24%, pink 24%, pink 28%, darkmagenta 28%, darkmagenta 36%, pink 36%, pink 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, pink 10%, darkmagenta 10%, darkmagenta 23%, pink 23%, pink 30%, darkmagenta 30%, darkmagenta 43%, pink 43%, pink 50%, darkmagenta 50%, darkmagenta 63%, pink 63%, pink 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, pink 5%, darkmagenta 5%, darkmagenta 15%, pink 15%, pink 20%, darkmagenta 20%, darkmagenta 29%, pink 29%, pink 34%, darkmagenta 34%, darkmagenta 44%, pink 44%, pink 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, pink 5%, darkmagenta 5%, darkmagenta 15%, pink 15%, pink 20%, darkmagenta 20%, darkmagenta 29%, pink 29%, pink 34%, darkmagenta 34%, darkmagenta 44%, pink 44%, pink 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+    
+    display: block;
+    width: 600px;
+    height: 600px;
+    background-color: gold;
+    border-radius: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle2{
+    background-color: red;
+background-image:
+repeating-linear-gradient(120deg,darkorange, rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, darkorange, rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 100%, transparent 25%, transparent 75%, darkorange 75%, darkorange),
+linear-gradient(120deg, rgb(255, 208, 0) 25%, transparent 25%, transparent 75%, darkorange 75%, darkorange);
+background-size: 70px 120px;
+    display: block;
+    width: 550px;
+    height: 550px;
+    background-color: rgb(226, 27, 27);
+    border-radius: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+.circle4{
+    background:
+radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px,  darkgreen 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, darkgreen 10px, rgba(96, 16, 48, 0) 11px),
+#8a3;
+background-size: 20px 20px;
+    display: block;
+    width: 210px;
+    height: 210px;
+    background-color:rgb(32, 124, 24);
+    border-radius: 400px;
+    top: 70px;
+    
+}
+
+
+.circle3{
+    background:
+radial-gradient(orange 15%, transparent 16%) 0 0,
+radial-gradient(orange 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(163, 20, 20, 0.74) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(163,20,20,.74) 15%, transparent 20%) 8px 9px;
+background-color:orange;
+background-size:16px 16px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    margin: 100px auto;
+    transform: rotateZ(30deg);
+    position: absolute;
+    top: 255px;
+    left: 745px;
+}
+
+.oval{
+ 
+
+    display: block;
+    width: 76px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 10px solid goldenrod;
+    border-radius: 50%;
+    top: -80px;
+    left: -17px;
+    position: relative;
+}
+
+.oval:before, .oval:after{
+    content: ' ';
+    display: block;
+    width: 76px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 10px solid goldenrod;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform-origin: 38px 100px;
+}
+
+.oval:before{
+    transform: rotateZ(60deg);
+}
+
+.oval:after{
+    transform: rotateZ(-60deg);
+}
