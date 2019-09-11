@@ -11,7 +11,7 @@ for pookalam designs made with code.
 4. Try to use only as minimum dependencies as possible. Any dependencies to run the code must be specified in a Requirements.txt
 5. Place a pull request to submit your entries. A merged request is an accepted entry.
 
-Last Date : 11th of September 2019 3:00 PM
+Last Date : Extended to 15th of September 2019 3:00 PM
 
 Happy Onam! from FOSSMEC
 
