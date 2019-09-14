@@ -30,20 +30,23 @@ def big_flower(shade):
         turtle.fillcolor(shade)
         turtle.pen(pencolor=shade,pensize="1")
         turtle.begin_fill()
-        turtle.circle(300,70)
+        turtle.circle(305,70)
         turtle.left(110)
-        turtle.circle(300,70)
+        turtle.circle(305,70)
         turtle.end_fill()
         turtle.right(1)
-def draw_square(square):
-	for i in range(0,2):
-		square.forward(100)
-		square.right(30)
-		square.forward(100)
-		square.right(150)
+def draw_square(square,lll,cll):
+    for i in range(0,2):
+        square.begin_fill()
+        square.fillcolor(cll)
+        square.forward(lll)
+        square.right(30)
+        square.forward(lll)
+        square.right(150)
+        square.end_fill()
 
 
-def draw_flower():
+def draw_flower(coll,sizz):
 	window = turtle.Screen()
 	window.bgcolor("white")
 
@@ -51,11 +54,26 @@ def draw_flower():
 	hello.speed(0)
 	hello.shape("triangle")
     #turtle.pen(pencolor="99FF00",pensize="1")
-	hello.color("#99FF00")
+	hello.color(coll)
 
 	for i in range(0,36):
-		draw_square(hello)
+		draw_square(hello,sizz,coll)
 		hello.right(10)
+def petal(t, r, angle):
+    """Use the Turtle (t) to draw a petal using two arcs
+    with the radius (r) and angle.
+    """
+    for i in range(2):
+        t.circle(r,angle)
+        t.left(180-angle)
+
+def flower(t, n, r, angle):
+    """Use the Turtle (t) to draw a flower with (n) petals,
+    each with the radius (r) and angle.
+    """
+    for i in range(n):
+        petal(t, r, angle)
+        t.left(360.0/n)
 turtle.pen(pencolor="#770E13",pensize="1")
 circ("#770E13",400)
 turtle.pen(pencolor="#E67B47",pensize="1")
@@ -79,7 +97,7 @@ turtle.right(60)
 turtle.pen(pencolor="#EFE19A",pensize="1")
 big_flower("#EFE19A")
 turtle.pen(pencolor="#C8520A",pensize="1")
-turtle.right(30)
+turtle.right(60)
 big_flower("#C8520A")
 turtle.pen(pencolor="red",pensize="1")
 circ("red",280)
@@ -87,6 +105,16 @@ circ("red",280)
 
 t = turtle.Turtle()
 t.speed(0)
+####draw_flower("#ECE19F",150)##################################
+turtle.begin_fill()
+turtle.pen(pencolor="#ECE19F",pensize="1")
+turtle.fillcolor("#ECE19F")
+turtle.speed(0)
+turtle.pen(pencolor="#ECE19F",pensize="1")
+for k in range(12):
+    square(197)
+    turtle.rt(30)  
+turtle.end_fill()
 turtle.pen(pencolor="#FFD504",pensize="1")
 t.begin_fill()
 #turtle.pen(pencolor="#FFD504",pensize="1")
@@ -100,8 +128,9 @@ t.end_fill()
 #draw_flower()
 turtle.pen(pencolor="#F4E389",pensize="1")
 circ("#F4E389",250)
+draw_flower("orange",129)
 turtle.pen(pencolor="#E67B47",pensize="1")
-circ("#E67B47",230)
+circ("#E67B47",220)
 turtle.pen(pencolor="#2E7644",pensize="1")
 circ("#2E7644",210)
 
@@ -127,15 +156,32 @@ for k in range(9):
         turtle.right(60) #Turning the turtle by 60 degree
     turtle.rt(40)
 turtle.end_fill()
-turtle.pen(pencolor="#C8520A",pensize="1")
-circ("#C8520A",160)
+turtle.pen(pencolor="#C8520A",pensize="1")#ECE19F
+circ("#C8520A",172)
 turtle.pen(pencolor="#770E13",pensize="1")
-circ("#770E13",145)
+circ("#770E13",162)
 turtle.pen(pencolor="#E67B47",pensize="1")
-circ("#E67B47",130)
-turtle.pen(pencolor="#ECE19F",pensize="1")
-circ("#ECE19F",115)
-
+circ("#E67B47",152)
+turtle.pen(pencolor="orange",pensize="1")
+circ("orange",142)
+turtle.begin_fill()
+turtle.fillcolor("#383629")
+turtle.pen(pencolor="#383629",pensize="1")
+flower(turtle, 9, 140.0, 60.0)
+turtle.end_fill()
+turtle.lt(30)
+turtle.begin_fill()
+turtle.fillcolor("#EFE19A")
+turtle.pen(pencolor="#EFE19A",pensize="1")
+flower(turtle, 9, 140.0, 60.0)
+turtle.end_fill()
+turtle.lt(30)
+turtle.begin_fill()
+turtle.fillcolor("#C8520A")
+turtle.pen(pencolor="#C8520A",pensize="1")
+flower(turtle, 9, 140.0, 60.0)
+turtle.end_fill()
+turtle.lt(30)
 turtle.pen(pencolor="orange",pensize="1")
 for k in range(6):
     turtle.begin_fill()
@@ -145,7 +191,7 @@ for k in range(6):
     else:
         turtle.pen(pencolor="orange",pensize="1")
         turtle.fillcolor("orange")
-    square(80)
+    square(40)
     turtle.rt(60)
     turtle.end_fill()
 turtle.exitonclick()
