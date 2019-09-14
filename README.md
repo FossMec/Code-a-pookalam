@@ -19,4 +19,4 @@ Happy Onam! from FOSSMEC
 
 Learning git is very easy and quite useful in software industry.
 
-[Go and learn git](https://github.com/FossMec/Learning-Resources#git)
+[Go and learn git](https://github.com/FossMec/Learning-Resources#git) and put your first PR using [Practise git challenge of FOSSMEC](https://github.com/FossMec/Practice-Git).
