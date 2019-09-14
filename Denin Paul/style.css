@@ -1,0 +1,101 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #ffda75;
+}
+
+.c3{
+  width: 90vh;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(#089627 0%, #044712 55%,#fdb009 0%, #fdb009 63%, #97062a 0% , #97062a 20% );
+}
+
+.wrapper2{
+  width: 65vh;
+  height: 65vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11{
+  width: 28vh;
+  height: 28vh;
+  top: 20%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(#fdb009  0%, #fdb009 30%, #ff6f1c 0%, #ff6f1c 45%, #970612 0%, #970612 58%,  #1a0003 0%, #140002 100% );
+  z-index: 10;
+}
+
+.c5{
+  top: 50%;
+  left: 20%;
+  z-index: 8;
+}
+
+.c6{
+  top: 80%;
+  left: 50%;
+  z-index: 6;
+}
+
+.c7{
+  top: 50%;
+  left: 80%;
+  z-index: 4;
+}
+
+.c8{
+  top: 30%;
+  left: 30%;
+  z-index: 9;
+}
+
+.c9{
+  top: 70%;
+  left: 30%;
+  z-index: 7;
+}
+
+.c10{
+  top: 70%;
+  left: 70%;
+  z-index: 3;
+}
+
+.c11{
+  top: 30%;
+  left: 70%;
+  z-index: 5;
+  
+}
+
+
+.center1{
+  width: 45vh;
+  height: 45vh;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(#97062a 0%, #97062a 4%, #f7eea2 0%, #f7eea2 13%,#044712 0%, #044712 28%, #ff6f1c 0%, #ff6f1c 42%, #97062a 0%, #97062a 56%,  #96085b 0%, #96085b 67%, #111111 0%, #111111 100%);
+  z-index: 21;
+}
+
+
+/*
+#7f0000
+#bf360c
+#ff6f00
+#fbc02d */
