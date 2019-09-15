@@ -1,4 +1,5 @@
-# Code-a-pookalam
+# Code-a-pookalam 2019 (Competition Ended)
+* We are not accepting anymore entries for the competition . You can fork this repo and try to modify all the designs as you please for fun or learning.
 Code-a-pookalam contest at Govt. Model Engineering College
 
 FOSSMEC is taking inspiration from RIT event https://github.com/RITct/Code-A-Pookalam and invites entries
